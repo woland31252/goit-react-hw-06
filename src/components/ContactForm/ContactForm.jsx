@@ -25,7 +25,6 @@ const ContactSchema = Yup.object().shape({
         }
 
     const handleSubmit = (values, actions) => {
-        console.log(values)
         dispatch(addContact(values.name, values.number))
         actions.resetForm();
 }

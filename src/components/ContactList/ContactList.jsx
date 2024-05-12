@@ -11,9 +11,5 @@ export default function ContactList() {
         <ul className={css.contList}>
             {filteredContacts.map((cont) => (<li key={cont.id} className={css.contItem}><Contact contItem={cont}/></li>))}
         </ul>
-        //  <ul className={css.contList}>
-        //     {contacts.map((cont) => (<li key={cont.id} className={css.contItem}><Contact contItem={cont}/></li>))}
-        // </ul>
-
     )
 }

@@ -7,9 +7,7 @@ const filtersSlice = createSlice({
   initialState: filtersInitState,
   reducers: {
       findContactFilter: (state, action) => {
-          console.log("action:", action);
-          console.log("state:", state);
-          state.name = action.payload;
+        state.name = action.payload;
     },
   },
 });
